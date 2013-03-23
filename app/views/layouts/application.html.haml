@@ -22,6 +22,13 @@
             %strong Competitive Analysis HQ
     %section#feature_slider
       %article#showcasing.slide{:style => "background: url('/assets/backgrounds/landscape.png') no-repeat top center;background-size:110%;"}
+        .email-container
+          %h2 Be The First To Track Your Competition
+          %h3.subtitle Join The Early Invite List
+          %h3#email-error.hidden Please enter a valid email.
+          %form
+            =text_field_tag 'email',nil, placeholder: "Your Email Address"
+            %button.btn-success.btn.btn-large Sign Up Now &raquo;
     #showcase
       .container
         .section_header

@@ -1,3 +1,48 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.email-container {
+  z-index: 1000;
+  position: relative;
+  width: 700px;
+  margin: 170px auto;
+  background-color: rgba(0,0,0, 0.4);
+  border: 1px solid rgba(0,0,0, 0.35);
+  border-radius: 5px;
+  padding: 10px 10px;
+
+  h2, h3 {
+    color: #f3f8fc;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin-bottom: 20px;
+  }
+
+  input {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 70px;
+    padding: 11px;
+    width: 350px;
+    font-size: 1.7em;
+    line-height: 27px;
+  }
+
+  .btn {
+    margin-top: 9px;
+  }
+
+  #email-error {
+    margin-top: 30px;
+    color: #ff3333;
+  }
+
+  .thank-you {
+    padding-top: 20px;
+  }
+}
