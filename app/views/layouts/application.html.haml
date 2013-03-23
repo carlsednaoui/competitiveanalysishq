@@ -1,0 +1,104 @@
+!!!
+%html
+  %head
+    %title Competitive Analysis HQ
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / Styles
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic", :rel => "stylesheet", :type => "text/css"}/
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  %body.pull_top
+    .navbar.transparent.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          = link_to root_path, class: "brand" do
+            %strong Competitive Analysis HQ
+    %section#feature_slider
+      %article#showcasing.slide{:style => "background: url('/assets/backgrounds/landscape.png') no-repeat top center;background-size:110%;"}
+    #showcase
+      .container
+        .section_header
+          %h3 Benefits
+        .row.feature_wrapper
+          / Features Row
+          .features_op1_row
+            / Feature
+            .span4.feature.first
+              .img_box
+                = image_tag "service1.png"
+              .text
+                %h6 Save Time
+                %p
+                  Stop wasting time checking up on your competitors manually.
+            / Feature
+            .span4.feature
+              .img_box
+                = image_tag "service2.png"
+              .text
+                %h6 Track Your Competitor's Every Move
+                %p
+                  Better understand your competitor's messaging and how they are growing their business.
+            / Feature
+            .span4.feature.last
+              .img_box
+                = image_tag "service3.png"
+              .text
+                %h6 Stay One Step Ahead
+                %p
+                  Understand where the market is moving before it is too late.
+    #features
+      .container
+        .section_header
+          %h3 Features
+        .row.feature
+          .span6
+            = image_tag "showcase1.png"
+          .span6.info
+            %h3
+              = image_tag "features-ico1.png"
+              Analyze Their Email Strategy
+            %p
+              There are many variations of passages of Lorem Ipsum available, but the randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        .row.feature.ss
+          .span6.info
+            %h3
+              = image_tag "features-ico2.png"
+              Stay on Top of The Technology They Use
+            %p
+              There are many variations of passages of Lorem Ipsum available, but the randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+          .span6
+            = image_tag "showcase2.png"
+        .row.feature.ss
+          .span6
+            = image_tag "showcase3.png"
+          .span6.info
+            %h3
+              = image_tag "features-ico3.png"
+              See Their Web Page Design Changes
+            %p
+              There are many variations of passages of Lorem Ipsum available, but the randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+    / starts footer
+    %footer#footer
+      .container
+        .row.credits
+          .span12
+            .row.social
+              .span12
+                %a.facebook{:href => "http://facebook.com/competitiveanalysis"}
+                  %span.socialicons.ico1
+                  %span.socialicons_h.ico1h
+                %a.twitter{:href => "http://twitter.com/competitiveanalysis"}
+                  %span.socialicons.ico2
+                  %span.socialicons_h.ico2h
+            .row.copyright
+              .span12
+                © 2013 Competitive Analysis HQ. All rights reserved
+
+    = render "shared/google_analytics"
