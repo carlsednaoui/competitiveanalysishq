@@ -538,8 +538,48 @@
 @media (max-width: 767px) {
     #partner-slider,
     #feature_slider {
-        display: none;
+        height: 250px;
+        width: 100%;
+        position: static;
+
     }
+    .slide {
+        height: 250px;
+        width: 100%;
+        position: static;
+    }
+
+    .email-container {
+        width: auto !important;
+        margin: 0 auto !important;
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    .email-container h2, .email-container h3 {
+        color: #f3f8fc;
+        margin: 0;
+        padding-top: 0;
+        text-align: center;
+        font-size: 1em;
+        color: #30353a !important;
+      }
+
+    .email-container input {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        padding: 11px !important;
+        width: auto !important;
+        font-size: 1em !important;
+        line-height: 27px !important;
+    }
+
+    .email-container .btn {
+        font-size: 14px;
+    }
+
+
+
     #showcase .features_op1_row .feature {
         margin-bottom: 60px;
     }
