@@ -7,6 +7,5 @@ development:
   adapter: postgresql
   database: competitive-analysis-dev
   user: swerner
-  host: localhost
   pool: 5
   timeout: 5000
